@@ -2,27 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Define global variables for colors */
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 0, 0, 0; /* black */
+  --background-start-rgb: 255, 255, 255; /* white */
+  --background-end-rgb: 255, 255, 255; /* white */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb: 255, 255, 255; /* white */
+    --background-start-rgb: 0, 0, 0; /* black */
+    --background-end-rgb: 0, 0, 0; /* black */
   }
 }
 
+/* Apply global styles */
 body {
   color: rgb(var(--foreground-rgb));
+  background-color: rgb(var(--background-start-rgb)); /* Ensure background color is set */
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
-    )
+    ),
     rgb(var(--background-start-rgb));
 }
 
