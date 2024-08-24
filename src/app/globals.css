@@ -26,6 +26,12 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.circle-image-container {
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

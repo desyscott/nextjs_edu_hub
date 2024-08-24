@@ -1,7 +1,12 @@
 
+'use client'
+ 
+import { useRouter } from 'next/navigation'
 import Image from "next/image";
 
 const FeaturesSection = () => {
+
+  const router = useRouter()
     return (
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
@@ -27,7 +32,11 @@ const FeaturesSection = () => {
             />
           </div>
           <div className="text-center mt-12">
-            <button className="bg-black text-white py-3 px-8 rounded-md hover:bg-gray-800 transition duration-300">
+            <button 
+              type="button"
+             onClick={() => router.push('/dashboard')}
+            className="bg-black text-white py-3 px-8 rounded-md hover:bg-gray-800 transition duration-300"
+            >
               Enroll your ward now →
             </button>
           </div>
@@ -39,8 +48,10 @@ const FeaturesSection = () => {
   const FeatureCard = ({ icon, title, description }: { icon: string; title: string; description: string; }) => {
     return (
       <div className="text-center">
-        <div className="mx-auto mb-4 w-16 h-16 relative ">
+        <div className="flex justify-center mb-4">
+        <div className=" bg-[#F1F8FE] p-9 rounded-full shadow-md w-20 h-20 relative  " style={{ width: '80px', height: '80px' }}>
         <Image src={icon} alt={title} layout="fill" objectFit="contain" />
+      </div>
       </div>
         <h3 className="text-black mb-2 text-2xl font-semibold">{title}</h3>
         <p className="text-gray-600">{description}</p>

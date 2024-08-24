@@ -12,6 +12,10 @@ const config: Config = {
         gilroy: ['Gilroy-Bold', 'sans-serif'], // Gilroy Bold font
         sora: ['Sora', 'sans-serif'],          // Sora Bold 
       },
+      animation: {
+        bounce: 'bounce 2s infinite',
+        spin: 'spin 3s linear infinite',
+      },
     },
   },
   plugins: [],
