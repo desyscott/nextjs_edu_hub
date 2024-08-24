@@ -1,13 +1,22 @@
 import Image from "next/image";
+import Navbar from '@/components/Navbar';
+import HeroSection from '@/components/HeroSection';
+import FeaturesSection from '@/components/FeaturesSection';
+import Footer from '@/components/Footer';
 
 export default function LandingPage() {
   return (
-    <main className="font-gilroy">
+    <> 
+     <Navbar />
+    <main className=" pt-16 font-gilroy">
+      
   
-      <h1 className="text-4xl">Welcome to Our Landing Page</h1>
-      <p className="font-sora">Get started today!</p>
+     <HeroSection/>
+     <FeaturesSection />
      
   
     </main>
+    <Footer/>
+    </>
   );
 }
