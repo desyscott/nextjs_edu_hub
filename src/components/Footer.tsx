@@ -1,11 +1,9 @@
 // /components/Footer.tsx
-
-import { FC } from 'react';
 import { FiMail, FiPhone, FiMapPin } from 'react-icons/fi';
 
-const Footer: FC = () => {
+const Footer = () => {
   return (
-    <footer className="bg-black text-white py-10">
+    <footer className="bg-[#05060F] text-white py-10">
       <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Logo and Tagline */}
         <div>
@@ -16,7 +14,7 @@ const Footer: FC = () => {
         {/* Quick Links */}
         <div>
           <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-          <div className="grid grid-cols-2 gap-2">
+          <div className="grid grid-cols-2 gap-0.1">
             <ul className="space-y-2 text-sm text-gray-400">
               <li><a href="#" className="hover:text-white">Home</a></li>
               <li><a href="#" className="hover:text-white">About Us</a></li>

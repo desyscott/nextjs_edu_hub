@@ -1,62 +1,116 @@
-// components/EnrollSection.tsx
+// components/StudentJoinSection.tsx
 
-import React, { FC } from 'react';
 
-const EnrollSection: FC = () => {
+'use client'
+ 
+import { useRouter } from 'next/navigation'
+
+import Image from "next/image";
+
+const EnrollSection= () => {
+
+  const router = useRouter()
+  
   return (
-    <section className="relative bg-white py-20 flex justify-center items-center overflow-hidden">
-         <div className="container mx-auto px-4 md:px-20 lg:px-32 text-center">
-      {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-black">
+    <section className="relative flex flex-col items-center justify-center py-20 bg-[#FFFFFF] overflow-hidden">
+      {/* Centered Text and Button */}
+      <div className="text-center  mb-10">
+        <h3 className="text-black text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
           Enroll your ward to join
-          <br />
-          <span className="text-xl md:text-2xl font-medium">
-            over 3000+ successful students
-          </span>
-        </h2>
+        </h3>
+        <h3 className="text-black text-2xl md:text-3xl lg:text-4xl font-bold mb-6">
+          over 3000+ successful students
+        </h3>
+        <button 
+          type="button"
+          onClick={() => router.push('/dashboard')}
+        className="bg-black text-white px-8 py-3 rounded-md hover:bg-gray-800 transition-colors">
+          Enroll your ward now &rarr;
+        </button>
+      </div>
 
-        {/* Enroll Button */}
-        <div className="mt-6">
-          <button className="px-8 py-3 bg-black text-white rounded-md shadow-md hover:bg-gray-800">
-            Enroll your ward now →
-          </button>
+      {/* Images Curved to Left */}
+      <div className="absolute flex flex-col items-center space-y-4 left-36 ">
+        <div className="transform  translate-x-20 translate-y-20">
+          <Image
+            src="/Assets/images/Ellipse1e1.png" // Replace with actual path
+            alt="Student 1"
+            width={96}
+            height={96}
+            className="rounded-full border-4 border-white" 
+          />
         </div>
-
-      {/* Left Circular Images */}
-      <div className="absolute flex flex-col space-y-4 left-10 transform -translate-y-1/4">
-        <div className="circle-image w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden shadow-lg">
-          <img src="/images/student1.jpg" alt="Student 1" className="w-full h-full object-cover" />
+        <div className="transform translate-x-36 translate-y-16">
+          <Image
+            src="/Assets/images/Ellipse2e2.png" // Replace with actual path
+            alt="Student 2"
+            width={64}
+            height={64}
+            className="rounded-full border-4 border-white"
+          />
         </div>
-        <div className="circle-image w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden shadow-lg transform translate-x-4 -translate-y-4">
-          <img src="/images/student2.jpg" alt="Student 2" className="w-full h-full object-cover" />
+        <div className="transform translate-x-56 translate-y-3">
+          <Image
+            src="/Assets/images/Ellipse3e3.png" // Replace with actual path
+            alt="Student 3"
+            width={64}
+            height={64}
+            className="rounded-full border-4 border-white"
+          />
         </div>
-        <div className="circle-image w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden shadow-lg transform translate-x-6 -translate-y-6">
-          <img src="/images/student3.jpg" alt="Student 3" className="w-full h-full object-cover" />
-        </div>
-        <div className="circle-image w-20 h-20 md:w-18 md:h-18 rounded-full overflow-hidden shadow-lg transform translate-x-8 -translate-y-8">
-          <img src="/images/student4.jpg" alt="Student 4" className="w-full h-full object-cover" />
-          student 4
+        <div className="transform translate-x-80 -translate-y-7">
+          <Image
+            src="/Assets/images/Ellipse4e4.png" // Replace with actual path
+            alt="Student 4"
+            width={96}
+            height={96}
+            className="rounded-full border-4 border-white"
+          />
         </div>
       </div>
 
-      {/* Right Circular Images */}
-      <div className="absolute flex flex-col space-y-4 right-10 transform -translate-y-1/4">
-        <div className="circle-image w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden shadow-lg">
-          <img src="/images/student5.jpg" alt="Student 5" className="w-full h-full object-cover" />
+      {/* Images Curved to Right */}
+      <div className="absolute flex flex-col items-center space-y-4 right-36">
+        <div className="transform  -translate-x-20 translate-y-20">
+          <Image
+            src="/Assets/images/Ellipse1e8.png" // Replace with actual path
+            alt="Student 5"
+            width={96}
+            height={96}
+            className="rounded-full border-4 border-white"
+          />
         </div>
-        <div className="circle-image w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden shadow-lg transform -translate-x-4 -translate-y-4">
-          <img src="/images/student6.jpg" alt="Student 6" className="w-full h-full object-cover" />
+        <div className="transform -translate-x-36 translate-y-16">
+          <Image
+            src="/Assets/images/Ellipse2e7.png" // Replace with actual path
+            alt="Student 6"
+            width={64}
+            height={64}
+            className="rounded-full border-4 border-white"
+          />
         </div>
-        <div className="circle-image w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden shadow-lg transform -translate-x-6 -translate-y-6">
-          <img src="/images/student7.jpg" alt="Student 7" className="w-full h-full object-cover" />
+        <div className="transform -translate-x-56 translate-y-4">
+          <Image
+            src="/Assets/images/Ellipse3e6.png" // Replace with actual path
+            alt="Student 7"
+            width={64}
+            height={64}
+            className="rounded-full border-4 border-white"
+          />
         </div>
-        <div className="circle-image w-14 h-14 md:w-18 md:h-18 rounded-full overflow-hidden shadow-lg transform -translate-x-8 -translate-y-8">
-          <img src="/images/student8.jpg" alt="Student 8" className="w-full h-full object-cover" />
+        <div className="transform -translate-x-80 -translate-y-7">
+          <Image
+            src="/Assets/images/Ellipse4e5.png" // Replace with actual path
+            alt="Student 8"
+            width={96}
+            height={96}
+            className="rounded-full border-4 border-white"
+          />
         </div>
-      </div>
       </div>
     </section>
   );
 };
 
-export default EnrollSection;
+export default EnrollSection
+;

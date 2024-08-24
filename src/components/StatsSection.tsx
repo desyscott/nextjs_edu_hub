@@ -1,6 +1,6 @@
 const StatsSection = () => {
     return (
-      <section className="bg-[#006D81] py-16">
+      <section className="bg-[#006E90] py-16">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-4 md:px-20 lg:px-32">
           {/* Left Text */}
           <div className="text-white text-center md:text-left mb-8 md:mb-0">
