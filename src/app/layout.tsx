@@ -25,8 +25,8 @@ export default function RootLayout({
         <link rel="stylesheet" href={sora} />
       </head>
       <body className={inter.className}>
-        {children
-        }</body>
+        {children}
+        </body>
     </html>
   );
 }
