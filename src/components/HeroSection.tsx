@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 const HeroSection= () => {
   return (
     <section className="relative w-full h-screen bg-cover bg-center"
-     style={{ backgroundImage: "url('/48e67254a7ddfd72e3139053ce0f5bf3.jpeg')" }}>
+     style={{ backgroundImage: "url('/HeroImage.jpeg')" }}>
      <div className="absolute inset-0 bg-black bg-opacity-40"></div>
       <div className="relative z-10 flex flex-col justify-center h-full px-4 md:px-20 lg:px-32">
         <div className="text-white max-w-lg">

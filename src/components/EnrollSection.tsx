@@ -31,7 +31,7 @@ const EnrollSection= () => {
 
       {/* Images Curved to Left */}
       <div className="absolute flex flex-col items-center space-y-4 left-36 ">
-        <div className="transform  translate-x-20 translate-y-20">
+        <div className="transform  translate-x-20 translate-y-20 hidden lg:block">
           <Image
             src="/Assets/images/Ellipse1e1.png" // Replace with actual path
             alt="Student 1"
@@ -40,7 +40,7 @@ const EnrollSection= () => {
             className="rounded-full border-4 border-white" 
           />
         </div>
-        <div className="transform translate-x-36 translate-y-16">
+        <div className="transform lg:translate-x-36 lg:translate-y-16  translate-x-32 translate-y-36">
           <Image
             src="/Assets/images/Ellipse2e2.png" // Replace with actual path
             alt="Student 2"
@@ -49,7 +49,7 @@ const EnrollSection= () => {
             className="rounded-full border-4 border-white"
           />
         </div>
-        <div className="transform translate-x-56 translate-y-3">
+        <div className="transform lg:translate-x-56 lg:translate-y-3 translate-x-48 translate-y-16">
           <Image
             src="/Assets/images/Ellipse3e3.png" // Replace with actual path
             alt="Student 3"
@@ -58,7 +58,7 @@ const EnrollSection= () => {
             className="rounded-full border-4 border-white"
           />
         </div>
-        <div className="transform translate-x-80 -translate-y-7">
+        <div className="transform translate-x-80 -translate-y-7  hidden lg:block">
           <Image
             src="/Assets/images/Ellipse4e4.png" // Replace with actual path
             alt="Student 4"
@@ -71,7 +71,7 @@ const EnrollSection= () => {
 
       {/* Images Curved to Right */}
       <div className="absolute flex flex-col items-center space-y-4 right-36">
-        <div className="transform  -translate-x-20 translate-y-20">
+        <div className="transform  -translate-x-20 translate-y-20 hidden lg:block">
           <Image
             src="/Assets/images/Ellipse1e8.png" // Replace with actual path
             alt="Student 5"
@@ -80,7 +80,7 @@ const EnrollSection= () => {
             className="rounded-full border-4 border-white"
           />
         </div>
-        <div className="transform -translate-x-36 translate-y-16">
+        <div className="transform  lg:-translate-x-36 lg:translate-y-16 -translate-x-36 translate-y-36">
           <Image
             src="/Assets/images/Ellipse2e7.png" // Replace with actual path
             alt="Student 6"
@@ -89,7 +89,7 @@ const EnrollSection= () => {
             className="rounded-full border-4 border-white"
           />
         </div>
-        <div className="transform -translate-x-56 translate-y-4">
+        <div className="transform lg:-translate-x-56 lg:translate-y-4 -translate-x-52 translate-y-16">
           <Image
             src="/Assets/images/Ellipse3e6.png" // Replace with actual path
             alt="Student 7"
@@ -98,7 +98,7 @@ const EnrollSection= () => {
             className="rounded-full border-4 border-white"
           />
         </div>
-        <div className="transform -translate-x-80 -translate-y-7">
+        <div className="transform -translate-x-80 -translate-y-7  hidden lg:block">
           <Image
             src="/Assets/images/Ellipse4e5.png" // Replace with actual path
             alt="Student 8"

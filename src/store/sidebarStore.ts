@@ -1,4 +1,4 @@
-import create from 'zustand';
+import { create } from 'zustand';
 
 
 // the type for the store's state
@@ -15,3 +15,7 @@ const useSidebarStore = create<SidebarState>((set) => ({
 }));
 
 export default useSidebarStore;
+
+
+
+

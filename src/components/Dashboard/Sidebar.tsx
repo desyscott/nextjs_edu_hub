@@ -7,9 +7,9 @@ const Sidebar = () => {
   const { activeItem, setActiveItem } = useSidebarStore();
 
   return (
-    <div className="h-screen p-5  bg-white  flex flex-col">
+    <div className="h-screen p-5 bg-[#ffff] flex flex-col">
     {/* Navigation Items */}
-    <nav className="flex flex-col space-y-6 mt-16">
+    <nav className="flex flex-col space-y-6 mt-20">
       <button
         className={`flex items-center p-2 rounded-lg hover:bg-purple-100 ${
           activeItem === 'Admissions' ? 'bg-purple-100 text-purple-500' : 'text-gray-700'
