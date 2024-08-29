@@ -17,9 +17,8 @@ const NewsletterSection = () => {
             <Image
               src="/Assets/images/newletterImage1.jpeg"
               alt="Newsletter Image 1"
-              layout="fill"
-              objectFit="cover"
-              className="rounded-lg"
+              fill
+              className="rounded-lg object-cover"
               style={{ filter: 'brightness(1.2)' }} 
             />
             <div className="absolute inset-0 bg-black bg-opacity-30 flex items-end p-4 rounded-lg">
@@ -34,9 +33,8 @@ const NewsletterSection = () => {
             <Image
               src="/Assets/images/newletterImage2.jpeg"
               alt="Newsletter Image 2"
-              layout="fill"
-              objectFit="cover"
-              className="rounded-lg"
+               fill
+              className="rounded-lg object-cover"
               style={{ filter: 'brightness(1.2)' }} 
             />
             <div className="absolute inset-0 bg-black bg-opacity-30 flex items-end p-4 rounded-lg">
@@ -51,9 +49,8 @@ const NewsletterSection = () => {
             <Image
               src="/Assets/images/newletterImage3.jpeg"
               alt="Newsletter Image 3"
-              layout="fill"
-              objectFit="cover"
-              className="rounded-lg"
+              fill
+              className="rounded-lg object-cover"
               style={{ filter: 'brightness(1.2)' }} 
             />
             <div className="absolute inset-0 bg-black bg-opacity-30 flex items-end p-4 rounded-lg">

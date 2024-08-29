@@ -23,9 +23,8 @@ const TestimonialSection: FC = () => {
           <Image
               src="/Assets/images/TestimonialImage.jpeg" // Path to the image
               alt="Nathan Offei Ansah"
-              layout="fill" // This makes the image fill the container
-              objectFit="cover" // Ensures the image covers the container without stretching
-              className="rounded-lg" 
+              fill // This makes the image fill the container
+              className="rounded-lg object-cover" // Ensures the image covers the container without stretching
             />
           </div>
         </div>

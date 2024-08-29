@@ -51,7 +51,12 @@ const FeaturesSection = () => {
       <div className="text-center">
         <div className="flex justify-center mb-4">
         <div className=" bg-[#F1F8FE] p-9 rounded-full shadow-md w-20 h-20 relative  " style={{ width: '80px', height: '80px' }}>
-        <Image src={icon} alt={title} layout="fill" objectFit="contain" />
+        <Image 
+         src={icon}
+         alt={title} 
+         fill
+         className="object-contain"
+        />
       </div>
       </div>
         <h3 className="text-black mb-2 text-2xl font-semibold">{title}</h3>
